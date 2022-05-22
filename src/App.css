@@ -1,47 +1,44 @@
-* {
+*,
+*::after,
+*::before {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: "Popins", sans-serif;
+  position: relative;
+  background-color: rgb(104, 104, 104);
+}
+h1 {
   text-align: center;
+  margin-top: 20px;
+  color: aliceblue;
+}
+form {
+  position: fixed;
+  bottom: 500px;
+  right: 30%;
+  left: 30%;
+  border-radius: 8px;
+  border: 2px solid rgb(66, 66, 180);
+  color: #000;
+  box-shadow: 0 2px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
-header {
-  padding: 3rem 0;
+.items {
+  position: fixed;
+  top: 50px;
+  right: 30%;
+  left: 30%;
+  border-radius: 8px;
 }
 
-.todo-input {
-  padding: 0.5rem 5rem;
-  margin: 1rem 0;
+.form-group {
+  margin-bottom: 0;
 }
 
-.todo-button {
-  padding: 0.5rem;
-  margin-left: 0.5rem;
-}
-
-.newTodo {
-  padding-bottom: 0.5rem;
-}
-
-.complete-btn {
-  margin-right: 0.5rem;
-}
-
-.todo {
-  padding-left: 48rem;
-  padding-bottom: 2rem;
-  display: flex;
-}
-
-.todo li {
-  padding-right: 1rem;
-}
-
-.fa-trash,
-.fa-check {
-  pointer-events: none;
-  padding: 0.5rem;
+.completedTodo {
+  background-color: darkgray;
+  text-decoration: line-through;
 }
